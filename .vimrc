@@ -37,6 +37,22 @@ NeoBundle 'tpope/vim-surround'
 " vim-scripts repos
 NeoBundle 'closetag.vim'
 
+
+" Pcc's new plugins
+" 一種亂加的概念
+NeoBundle 'ervandew/supertab'
+NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'stephpy/vim-php-cs-fixer'
+NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'shawncplus/phpcomplete.vim'
+NeoBundle 'scrooloose/syntastic'
+
+
 filetype plugin indent on     " Required!
 "
 " Brief help
@@ -60,11 +76,14 @@ set nu
 set ai
 set tabstop=4
 set shiftwidth=4
+set expandtab
 set ic
+set modeline
 set incsearch
 set cursorline
 set showcmd
 set history=1000
+set encoding=utf-8
 
 " map Ctel-L to be nohl, clear search highlight
 nnoremap <c-l> :nohl<cr>
@@ -75,3 +94,8 @@ source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
+
+" powerline
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
