@@ -50,7 +50,6 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'shawncplus/phpcomplete.vim'
-NeoBundle 'scrooloose/syntastic'
 
 
 filetype plugin indent on     " Required!
