@@ -49,7 +49,9 @@ NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'shawncplus/phpcomplete.vim'
-
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'jlanzarotta/bufexplorer'
 
 filetype plugin indent on     " Required!
 "
@@ -105,3 +107,5 @@ let g:gitgutter_eager = 0
 let g:gitgutter_sign_column_always = 1
 highlight clear SignColumn
 
+" NERDTree Tab
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
