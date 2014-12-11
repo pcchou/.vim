@@ -1,4 +1,4 @@
-Denny's vimrc
+~~Denny~~ Pcchou's vimrc
 ===
 
 How to use?
@@ -6,16 +6,17 @@ How to use?
 
 Backup your original `.vimrc` and `.vim` settings.
 
-In home directory, 
+In home directory,
 
 ```
-git clone https://github.com/denny0223/.vim.git && ln -s .vim/.vimrc
+git clone https://github.com/pcchou/.vim.git && ln -s .vim/.vimrc
 ```
 
 use vim to open any file, vim plugin will be automatically installed.
 
 Plugin List
 ---
+To be fixed.
 * [**closetag**](http://www.vim.org/scripts/script.php?script_id=13)
 * [**ctrlp**](https://github.com/kien/ctrlp.vim)
 * [**NeoBundle**](https://github.com/Shougo/neobundle.vim) -- Vim plugin manager

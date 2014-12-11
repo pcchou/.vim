@@ -84,6 +84,7 @@ set cursorline
 set showcmd
 set history=1000
 set encoding=utf-8
+set wildmode=longest,list,full
 
 " map Ctel-L to be nohl, clear search highlight
 nnoremap <c-l> :nohl<cr>
