@@ -47,7 +47,6 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'stephpy/vim-php-cs-fixer'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'mattn/emmet-vim'
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'shawncplus/phpcomplete.vim'
 
@@ -105,3 +104,4 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 let g:gitgutter_sign_column_always = 1
 highlight clear SignColumn
+
