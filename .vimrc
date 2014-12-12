@@ -128,3 +128,6 @@ hi IndentGuidesEven guibg=green ctermbg=4
 
 " Paste mode
 set pastetoggle=<F10>
+
+" SuperTab
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-f>"
