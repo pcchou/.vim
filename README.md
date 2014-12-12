@@ -16,7 +16,6 @@ use vim to open any file, vim plugin will be automatically installed.
 
 Plugin List
 ---
-To be fixed.
 * [**closetag**](http://www.vim.org/scripts/script.php?script_id=13)
 * [**ctrlp**](https://github.com/kien/ctrlp.vim)
 * [**NeoBundle**](https://github.com/Shougo/neobundle.vim) -- Vim plugin manager
@@ -24,3 +23,5 @@ To be fixed.
 * [**syntastic**](https://github.com/scrooloose/syntastic)
 * [**vim-easymotion**](https://github.com/Lokaltog/vim-easymotion)
 * [**vim-surround**](https://github.com/tpope/vim-surround)
+* [**SuperTab**](https://github.com/ervandew/supertab)
+* [**Jedi-Vim**] (https://github.com/davidhalter/jedi-vim)
