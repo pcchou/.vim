@@ -56,6 +56,7 @@ NeoBundle 'michaeljsmith/vim-indent-object'
 NeoBundle 'vim-scripts/argtextobj.vim'
 "NeoBundle 'kana/vim-textobj-line'
 NeoBundle 'bkad/CamelCaseMotion'
+NeoBundle 'wellle/targets.vim'
 
 filetype plugin indent on     " Required!
 "
