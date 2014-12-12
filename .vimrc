@@ -52,6 +52,10 @@ NeoBundle 'shawncplus/phpcomplete.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'jlanzarotta/bufexplorer'
+NeoBundle 'michaeljsmith/vim-indent-object'
+NeoBundle 'vim-scripts/argtextobj.vim'
+"NeoBundle 'kana/vim-textobj-line'
+NeoBundle 'bkad/CamelCaseMotion'
 
 filetype plugin indent on     " Required!
 "
