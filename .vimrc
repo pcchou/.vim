@@ -42,7 +42,7 @@ NeoBundle 'closetag.vim'
 
 " Pcc's new plugins
 " 一種亂加的概念
-NeoBundle 'ervandew/supertab'
+"NeoBundle 'ervandew/supertab'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'tpope/vim-fugitive'
