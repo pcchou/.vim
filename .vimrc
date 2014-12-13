@@ -67,6 +67,7 @@ NeoBundle 'vim-scripts/L9'
 "NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'rkulla/pydiction'
+NeoBundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " Required!
 "
@@ -100,6 +101,11 @@ set showcmd
 set history=1000
 set encoding=utf-8
 set wildmode=longest,list,full
+
+" Solarized
+let g:solarized_termcolors=256
+colorscheme solarized
+set background=dark
 
 " map Ctel-L to be nohl, clear search highlight
 nnoremap <c-l> :nohl<cr>
