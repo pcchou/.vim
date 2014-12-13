@@ -68,6 +68,7 @@ NeoBundle 'vim-scripts/L9'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'rkulla/pydiction'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'greyblake/vim-preview'
 
 filetype plugin indent on     " Required!
 "
@@ -109,9 +110,12 @@ nnoremap <c-l> :nohl<cr>
 let g:closetag_html_style=1
 source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
+
+autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md set filetype=markdown
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
-autocmd FileType gitcommit set dictionary+=/usr/share/dict/words
+autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
+autocmd FileType gitcommit,markdown set linebreak
 
 " Solarized
 let g:solarized_termcolors=256
