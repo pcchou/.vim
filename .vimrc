@@ -102,11 +102,6 @@ set history=1000
 set encoding=utf-8
 set wildmode=longest,list,full
 
-" Solarized
-let g:solarized_termcolors=256
-colorscheme solarized
-set background=dark
-
 " map Ctel-L to be nohl, clear search highlight
 nnoremap <c-l> :nohl<cr>
 
@@ -117,6 +112,11 @@ source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
 autocmd FileType gitcommit set dictionary+=/usr/share/dict/words
+
+" Solarized
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 " powerline
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
