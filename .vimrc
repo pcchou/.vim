@@ -186,3 +186,5 @@ let g:pydiction_location = "~/.vim/bundle/pydiction/complete-dict"
 " select ALL
 map <C-A> ggVG
 
+" preview
+nnoremap <F12>f :exe ':silent !firefox %'<CR>
