@@ -66,6 +66,7 @@ NeoBundle 'othree/vim-autocomplpop'
 NeoBundle 'vim-scripts/L9'
 "NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'ervandew/supertab'
+NeoBundle 'rkulla/pydiction'
 
 filetype plugin indent on     " Required!
 "
@@ -170,6 +171,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
+let g:pydiction_location = "~/.vim/bundle/pydiction/complete-dict"
 
 
 " select ALL
