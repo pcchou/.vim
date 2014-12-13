@@ -59,6 +59,8 @@ NeoBundle 'vim-scripts/argtextobj.vim'
 "NeoBundle 'kana/vim-textobj-line'
 NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'wellle/targets.vim'
+NeoBundle 'othree/vim-autocomplpop'
+NeoBundle 'vim-scripts/L9'
 
 filetype plugin indent on     " Required!
 "
@@ -149,3 +151,7 @@ nnoremap tt  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
+
+" Completions
+inoremap <C-q> <c-x><c-f>
+inoremap <c-e> <c-x><c-l>
