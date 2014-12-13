@@ -156,6 +156,7 @@ nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 
 " Completions
+filetype plugin on
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:SuperTabMappingForward = "<tab>"
 let g:SuperTabMappingBackward = "<s-tab>"
@@ -163,10 +164,13 @@ inoremap <c-e> <c-x><c-k>
 inoremap <c-l> <c-x><c-l>
 set omnifunc=syntaxcomplete#Complete
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType xhtml,html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
+
 
 " select ALL
 map <C-A> ggVG
