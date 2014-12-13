@@ -118,7 +118,6 @@ set laststatus=2
 set t_Co=256
 
 " GitGutter
-let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 let g:gitgutter_sign_column_always = 1
 highlight clear SignColumn
