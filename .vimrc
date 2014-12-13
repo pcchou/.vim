@@ -59,8 +59,9 @@ NeoBundle 'vim-scripts/argtextobj.vim'
 "NeoBundle 'kana/vim-textobj-line'
 NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'wellle/targets.vim'
-NeoBundle 'othree/vim-autocomplpop'
-NeoBundle 'vim-scripts/L9'
+"NeoBundle 'othree/vim-autocomplpop'
+"NeoBundle 'vim-scripts/L9'
+NeoBundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on     " Required!
 "
@@ -153,6 +154,5 @@ nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 
 " Completions
-inoremap <c-q> <c-x><c-f>
-inoremap <c-e> <c-x><c-l>
+inoremap <c-e> <c-x><c-k>
 set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
