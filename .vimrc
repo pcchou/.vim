@@ -153,5 +153,6 @@ nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 
 " Completions
-inoremap <C-q> <c-x><c-f>
+inoremap <c-q> <c-x><c-f>
 inoremap <c-e> <c-x><c-l>
+set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
