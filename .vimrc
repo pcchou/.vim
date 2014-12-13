@@ -32,12 +32,15 @@ NeoBundle 'Shougo/vimproc'
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'msanders/snipmate.vim'
+NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 " vim-scripts repos
 NeoBundle 'closetag.vim'
+
+NeoBundle "MarcWeber/vim-addon-mw-utils"
+NeoBundle "tomtom/tlib_vim"
 
 
 " Pcc's new plugins
@@ -59,9 +62,10 @@ NeoBundle 'vim-scripts/argtextobj.vim'
 "NeoBundle 'kana/vim-textobj-line'
 NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'wellle/targets.vim'
-"NeoBundle 'othree/vim-autocomplpop'
-"NeoBundle 'vim-scripts/L9'
-NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'othree/vim-autocomplpop'
+NeoBundle 'vim-scripts/L9'
+"NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'ervandew/supertab'
 
 filetype plugin indent on     " Required!
 "
@@ -105,6 +109,7 @@ source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
+autocmd FileType gitcommit set dictionary+=/usr/share/dict/words
 
 " powerline
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
@@ -132,9 +137,6 @@ hi IndentGuidesEven guibg=green ctermbg=4
 " Paste mode
 set pastetoggle=<F10>
 
-" SuperTab
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-f>"
-
 " Tab navigation keybinds
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
@@ -154,5 +156,18 @@ nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 
 " Completions
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabMappingForward = "<tab>"
+let g:SuperTabMappingBackward = "<s-tab>"
 inoremap <c-e> <c-x><c-k>
-set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
+inoremap <c-l> <c-x><c-l>
+set omnifunc=syntaxcomplete#Complete
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" select ALL
+map <C-A> ggVG
+
