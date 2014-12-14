@@ -70,6 +70,7 @@ NeoBundle 'rkulla/pydiction'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'greyblake/vim-preview'
 NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'fisadev/vim-isort'
 
 filetype plugin indent on     " Required!
 "
