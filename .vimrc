@@ -69,6 +69,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'rkulla/pydiction'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'greyblake/vim-preview'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 filetype plugin indent on     " Required!
 "
