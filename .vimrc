@@ -1,5 +1,3 @@
-colorscheme default
-
 " Setting up NeoBundle - the vim plugin bundler
 set nocompatible               " Be iMproved
 
