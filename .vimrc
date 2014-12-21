@@ -32,15 +32,15 @@ NeoBundle 'Shougo/vimproc'
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'garbas/vim-snipmate'
+"NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 " vim-scripts repos
 NeoBundle 'closetag.vim'
 
-NeoBundle "MarcWeber/vim-addon-mw-utils"
-NeoBundle "tomtom/tlib_vim"
+"NeoBundle "MarcWeber/vim-addon-mw-utils"
+"NeoBundle "tomtom/tlib_vim"
 
 
 " Pcc's new plugins
