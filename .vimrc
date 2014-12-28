@@ -69,6 +69,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'greyblake/vim-preview'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'fisadev/vim-isort'
+NeoBundle "sudar/vim-arduino-syntax"
 
 filetype plugin indent on     " Required!
 "
