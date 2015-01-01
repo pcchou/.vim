@@ -148,23 +148,14 @@ hi IndentGuidesEven guibg=green ctermbg=4
 " Paste mode
 set pastetoggle=<F10>
 
-" Tab navigation keybinds
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>
-nnoremap <C-Insert> :tabnew<CR>
-nnoremap <C-Delete> :tabclose<CR>
-nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabnext<CR>
-nnoremap tk  :tabprev<CR>
-nnoremap tl  :tablast<CR>
-nnoremap tt  :tabedit<Space>
-nnoremap tn  :tabnext<Space>
-nnoremap tm  :tabm<Space>
-nnoremap td  :tabclose<CR>
+" Browser-style tab keybind
+nnoremap <C-t> :tabnew<CR>
+inoremap <C-t> <Esc>:tabnew<CR>
+nnoremap <c-w>w :q<CR>
+
+" Tmux-style window keybind
+nnoremap <c-w>% :vsplit<CR>
+nnoremap <c-w>" :split<CR>
 
 " Completions
 filetype plugin on
