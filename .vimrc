@@ -70,6 +70,8 @@ NeoBundle 'greyblake/vim-preview'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'fisadev/vim-isort'
 NeoBundle "sudar/vim-arduino-syntax"
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'plasticboy/vim-markdown'
 
 filetype plugin indent on     " Required!
 "
