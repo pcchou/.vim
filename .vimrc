@@ -72,6 +72,7 @@ NeoBundle 'fisadev/vim-isort'
 NeoBundle "sudar/vim-arduino-syntax"
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'tpope/vim-sleuth'
 
 filetype plugin indent on     " Required!
 "
