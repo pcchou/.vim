@@ -74,6 +74,7 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'tpope/vim-sleuth'
 NeoBundle 'kana/vim-fakeclip'
+NeoBundle 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on     " Required!
 "
