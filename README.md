@@ -1,4 +1,4 @@
-~~Denny~~ Pcchou's vimrc
+pcchou's vimrc
 ===
 
 How to use?
