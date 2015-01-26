@@ -21,60 +21,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
-
-" My Bundles here:
-"
-" Note: You don't set neobundle setting in .gvimrc!
-" Original repos on github
-NeoBundle 'kien/ctrlp.vim'
-"NeoBundle 'garbas/vim-snipmate'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'tpope/vim-surround'
-" vim-scripts repos
-NeoBundle 'closetag.vim'
-
-"NeoBundle "MarcWeber/vim-addon-mw-utils"
-"NeoBundle "tomtom/tlib_vim"
-
-
-" Pcc's new plugins
-" 一種亂加的概念
-"NeoBundle 'ervandew/supertab'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'stephpy/vim-php-cs-fixer'
-NeoBundle 'junegunn/vim-easy-align'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'shawncplus/phpcomplete.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'jistr/vim-nerdtree-tabs'
-NeoBundle 'jlanzarotta/bufexplorer'
-NeoBundle 'michaeljsmith/vim-indent-object'
-NeoBundle 'vim-scripts/argtextobj.vim'
-"NeoBundle 'kana/vim-textobj-line'
-NeoBundle 'bkad/CamelCaseMotion'
-NeoBundle 'wellle/targets.vim'
-NeoBundle 'othree/vim-autocomplpop'
-NeoBundle 'vim-scripts/L9'
-"NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'rkulla/pydiction'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'greyblake/vim-preview'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'fisadev/vim-isort'
-NeoBundle "sudar/vim-arduino-syntax"
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'tpope/vim-sleuth'
-NeoBundle 'kana/vim-fakeclip'
-NeoBundle 'christoomey/vim-tmux-navigator'
+" Bundles
+source ~/.vim/bundles.vimrc
 
 filetype plugin indent on     " Required!
 "
@@ -116,7 +64,7 @@ nnoremap <c-l> :nohl<cr>
 let g:closetag_html_style=1
 source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
-
+" FileTypes
 autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md set filetype=markdown
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
@@ -180,3 +128,23 @@ map <C-A> ggVG
 
 " preview
 nnoremap <F12>f :exe ':silent !firefox %'<CR>
+
+" tabular
+let mapleader=','
+if exists(":Tabularize")
+    nmap <Leader>a= :Tabularize /=<CR>
+    vmap <Leader>a= :Tabularize /=<CR>
+    nmap <Leader>a: :Tabularize /:\zs<CR>
+    vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+function! s:align()
+    let p = '^\s*|\s.*\s|\s*$'
+    if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+        let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+        let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+        Tabularize/|/l1
+        normal! 0
+        call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+    endif
+endfunction
