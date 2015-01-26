@@ -4,7 +4,7 @@ pcchou's vimrc
 How to use?
 ---
 
-*IMPORTANT!* Backup your original `.vimrc` and `.vim` settings.
+*IMPORTANT!*  Backup your original `.vimrc` and `.vim` settings.
 
 1. You'll need a 256-color terminal. You can do this by adding ``export TERM='xterm-256color'`` to your `.bashrc`.
 2. Then ``git clone https://github.com/pcchou/.vim.git && ln -s .vim/.vimrc``
