@@ -1,4 +1,4 @@
-pcchou's vimrc
+pcchou's vim configurations
 ===
 
 How to use?
