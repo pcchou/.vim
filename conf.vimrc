@@ -118,4 +118,6 @@ let g:pydiction_location = "~/.vim/bundle/pydiction/complete-dict"
 " select ALL
 map <C-A> ggVG
 
-" jedi-vim
+" Yank Ring
+let g:yankring_replace_n_pkey = "<c-l>"
+
