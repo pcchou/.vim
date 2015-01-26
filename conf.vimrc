@@ -112,12 +112,10 @@ let g:SuperTabMappingBackward = "<s-tab>"
 inoremap <c-e> <c-x><c-k>
 inoremap <c-l> <c-x><c-l>
 set omnifunc=syntaxcomplete#Complete
-let g:pydiction_location = "~/.vim/bundle/pydiction/complete-dict"
-
 
 " select ALL
 map <C-A> ggVG
 
 " Yank Ring
-let g:yankring_replace_n_pkey = "<c-l>"
-
+let g:yankring_replace_n_pkey = "<c-m>"
+nnoremap <silent><F7> :YRShow<CR>
