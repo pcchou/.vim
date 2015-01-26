@@ -12,8 +12,8 @@ NeoBundle 'othree/vim-autocomplpop'
 "NeoBundle 'garbas/vim-snipmate'
 
 " Python
-"NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'rkulla/pydiction'
+NeoBundle 'davidhalter/jedi-vim'
+"NeoBundle 'rkulla/pydiction'
 "NeoBundle 'fisadev/vim-isort'
 
 " PHP

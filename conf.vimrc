@@ -112,15 +112,10 @@ let g:SuperTabMappingBackward = "<s-tab>"
 inoremap <c-e> <c-x><c-k>
 inoremap <c-l> <c-x><c-l>
 set omnifunc=syntaxcomplete#Complete
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType xhtml,html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 let g:pydiction_location = "~/.vim/bundle/pydiction/complete-dict"
 
 
 " select ALL
 map <C-A> ggVG
+
+" jedi-vim
