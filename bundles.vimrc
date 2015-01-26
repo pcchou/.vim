@@ -21,7 +21,7 @@ NeoBundle 'shawncplus/phpcomplete.vim'
 NeoBundle 'stephpy/vim-php-cs-fixer'
 
 " HTML
-NeoBundle 'alvan/vim-closetag.vim'
+NeoBundle 'alvan/vim-closetag'
 NeoBundle 'mattn/emmet-vim'
 
 " Programming/Languages
