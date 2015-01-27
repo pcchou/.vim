@@ -108,7 +108,7 @@ nnoremap <c-w>" :split<CR>
 
 " Completions
 filetype plugin on
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabMappingForward = "<tab>"
 let g:SuperTabMappingBackward = "<s-tab>"
 inoremap <c-e> <c-x><c-k>
@@ -121,3 +121,6 @@ map <C-A> ggVG
 " Yank Ring
 let g:yankring_replace_n_pkey = "<c-m>"
 nnoremap <silent><F7> :YRShow<CR>
+
+" emmet
+let g:user_emmet_expandabbr_key='<c-y>h'

@@ -39,6 +39,7 @@ NeoBundle 'wellle/targets.vim'
 NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'matchit.zip'
+NeoBundle 'justinmk/vim-sneak'
 
 " New features
 NeoBundle 'greyblake/vim-preview'
@@ -58,11 +59,13 @@ NeoBundle 'tpope/vim-sleuth'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-commentary'
+NeoBundle 'Raimondi/delimitMate'
 
 " Integrations
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'mattn/gist-vim'
+NeoBundle 'sudo.vim'
 
 " Others
 NeoBundle 'altercation/vim-colors-solarized'
