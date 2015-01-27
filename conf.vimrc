@@ -80,7 +80,7 @@ let g:gitgutter_eager = 1
 let g:gitgutter_realtime = 1
 let g:gitgutter_sign_column_always = 1
 set updatetime=750
-highlight SignColumn guibg=base02
+highlight clear SignColumn
 
 " NERDTree Tab
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
