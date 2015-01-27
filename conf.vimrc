@@ -130,6 +130,7 @@ let g:user_emmet_expandabbr_key='<c-y>h'
 let g:vim_arduino_library_path = '/usr/share/arduino/lib'
 let g:vim_arduino_serial_port = '$(ls /dev/tty* | grep usb)'
 
+<<<<<<< HEAD
 " syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -139,3 +140,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+=======
+" SudoEdit
+let g:sudo_no_gui=1
+>>>>>>> c316f6fdec113b7f01633e75af214af868919db6
