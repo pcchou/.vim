@@ -59,7 +59,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-commentary'
 
 " Integrations
-NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'mattn/gist-vim'
