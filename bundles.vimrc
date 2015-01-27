@@ -30,6 +30,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle "sudar/vim-arduino-syntax"
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/syntastic.git'
+NeoBundle 'pangloss/vim-javascript'
 
 " Motion/textobj
 "NeoBundle 'kana/vim-textobj-line'
@@ -66,6 +67,7 @@ NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'sudo.vim'
+NeoBundle 'tclem/vim-arduino'
 
 " Others
 NeoBundle 'altercation/vim-colors-solarized'
