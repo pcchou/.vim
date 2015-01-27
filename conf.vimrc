@@ -128,3 +128,4 @@ let g:user_emmet_expandabbr_key='<c-y>h'
 
 " vim-arduino
 let g:vim_arduino_library_path = '/usr/share/arduino/lib'
+let g:vim_arduino_serial_port = '$(ls /dev/tty* | grep usb)'
