@@ -16,6 +16,7 @@ NeoBundle 'othree/vim-autocomplpop'
 NeoBundle 'davidhalter/jedi-vim'
 "NeoBundle 'rkulla/pydiction'
 "NeoBundle 'fisadev/vim-isort'
+NeoBundle 'ehamberg/vim-cute-python'
 
 " PHP
 NeoBundle 'shawncplus/phpcomplete.vim'
