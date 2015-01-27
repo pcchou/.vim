@@ -67,7 +67,7 @@ NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'sudo.vim'
-NeoBundle 'tclem/vim-arduino'
+NeoBundle 'jplaut/vim-arduino-ino'
 
 " Others
 NeoBundle 'altercation/vim-colors-solarized'
