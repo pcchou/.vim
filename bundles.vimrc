@@ -4,6 +4,7 @@ NeoBundle 'Shougo/vimproc'
 
 " Libraries
 NeoBundle 'vim-scripts/L9'
+NeoBundle 'mattn/webapi-vim'
 
 " Completion enhancements
 NeoBundle 'ervandew/supertab'
