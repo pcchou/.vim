@@ -69,7 +69,7 @@ NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'mattn/gist-vim'
-NeoBundle 'sudo.vim'
+NeoBundle 'chrisbra/SudoEdit.vim'
 NeoBundle 'jplaut/vim-arduino-ino'
 
 " Others
