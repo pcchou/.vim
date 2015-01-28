@@ -134,19 +134,22 @@ let g:vim_arduino_serial_port = '$(ls /dev/tty* | grep usb)'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
+let g:syntastic_python_default_version = 'python3'
+let g:syntastic_python2_python_exec = 'python2'
+let g:syntastic_python3_python_exec = 'python3'
+let g:syntastic_python2_checkers = 'pylint2'
+let g:syntastic_python3_checkers = 'pylint3'
 function! Parse_Python_Shebang()
     let line = getline(1)
     if line =~# '\m^#!\s*[^ \t]*\<python2\=\>'
-        let g:syntastic_python_python_exec = g:syntastic_python2_python_exe
+        let g:syntastic_python_python_exec = g:syntastic_python2_python_exec
         let g:syntastic_python_checkers = g:syntastic_python2_checkers
     elseif line =~# '\m^#!\s*[^ \t]*\<python3\>'
-        let g:syntastic_python_python_exec = g:syntastic_python3_python_exe
+        let g:syntastic_python_python_exec = g:syntastic_python3_python_exec
         let g:syntastic_python_checkers = g:syntastic_python3_checkers
     else
         let g:syntastic_python_python_exec = g:syntastic_python_default_version
@@ -154,12 +157,10 @@ function! Parse_Python_Shebang()
             \ g:syntastic_python3_checkers : g:syntastic_python2_checkers
     endif
 endfunction
-
-command! SyntasticPython2 let g:syntastic_python_python_exec = g:syntastic_python2_python_exe |
+command! SyntasticPython2 let g:syntastic_python_python_exec = g:syntastic_python2_python_exec |
     \ let g:syntastic_python_checkers = g:syntastic_python2_checkers
-command! SyntasticPython3 let g:syntastic_python_python_exec = g:syntastic_python3_python_exe |
+command! SyntasticPython3 let g:syntastic_python_python_exec = g:syntastic_python3_python_exec |
     \ let g:syntastic_python_checkers = g:syntastic_python3_checkers
-
 autocmd BufWinEnter *.py call Parse_Python_Shebang()
 
 " SudoEdit
