@@ -117,7 +117,8 @@ inoremap <c-e> <c-x><c-k>
 inoremap <c-l> <c-x><c-l>
 set omnifunc=syntaxcomplete#Complete
 
-" select ALL
+" Misc.
+map <F8> gg=G
 map <C-A> ggVG
 
 " Yank Ring
@@ -149,3 +150,4 @@ function SudoWritenq()
     :endfunction
 cnoreabbrev <expr>swq getcmdtype() == ":" && getcmdline() == 'swq' ? 'call SudoWritenq()' : 'swq'
 cnoreabbrev <expr>sw getcmdtype() == ":" && getcmdline() == 'sw' ? 'SudoWrite' : 'sw'
+
