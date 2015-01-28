@@ -74,6 +74,8 @@ autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
 
 " Solarized
 let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 " GitGutter
 let g:gitgutter_eager = 1

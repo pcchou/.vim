@@ -1,7 +1,7 @@
 source ~/.vim/conf.vimrc
 
-colorscheme solarized
 set background=dark
+colorscheme solarized
 highlight clear SignColumn
 
 hi IndentGuidesOdd  ctermbg=3
