@@ -74,15 +74,12 @@ autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
 
 " Solarized
 let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
 
 " GitGutter
 let g:gitgutter_eager = 1
 let g:gitgutter_realtime = 1
 let g:gitgutter_sign_column_always = 1
 set updatetime=750
-highlight clear SignColumn
 
 " NERDTree Tab
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
