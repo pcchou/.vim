@@ -143,3 +143,9 @@ let g:syntastic_loc_list_height=3
 
 " SudoEdit
 let g:sudo_no_gui=1
+function SudoWritenq()
+    SudoWrite
+    q
+    :endfunction
+cnoreabbrev <expr>swq getcmdtype() == ":" && getcmdline() == 'swq' ? 'call SudoWritenq()' : 'swq'
+cnoreabbrev <expr>sw getcmdtype() == ":" && getcmdline() == 'sw' ? 'SudoWrite' : 'sw'
