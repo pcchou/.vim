@@ -140,5 +140,27 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+function! Parse_Python_Shebang()
+    let line = getline(1)
+    if line =~# '\m^#!\s*[^ \t]*\<python2\=\>'
+        let g:syntastic_python_python_exec = g:syntastic_python2_python_exe
+        let g:syntastic_python_checkers = g:syntastic_python2_checkers
+    elseif line =~# '\m^#!\s*[^ \t]*\<python3\>'
+        let g:syntastic_python_python_exec = g:syntastic_python3_python_exe
+        let g:syntastic_python_checkers = g:syntastic_python3_checkers
+    else
+        let g:syntastic_python_python_exec = g:syntastic_python_default_version
+        let g:syntastic_python_checkers = g:syntastic_python_default_version =~# '\<python3$' ?
+            \ g:syntastic_python3_checkers : g:syntastic_python2_checkers
+    endif
+endfunction
+
+command! SyntasticPython2 let g:syntastic_python_python_exec = g:syntastic_python2_python_exe |
+    \ let g:syntastic_python_checkers = g:syntastic_python2_checkers
+command! SyntasticPython3 let g:syntastic_python_python_exec = g:syntastic_python3_python_exe |
+    \ let g:syntastic_python_checkers = g:syntastic_python3_checkers
+
+autocmd BufWinEnter *.py call Parse_Python_Shebang()
+
 " SudoEdit
 let g:sudo_no_gui=1
