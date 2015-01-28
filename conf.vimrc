@@ -70,6 +70,7 @@ autocmd FileType gitcommit setlocal spell
 autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
 autocmd FileType gitcommit,markdown set linebreak
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
 
 " Solarized
 let g:solarized_termcolors=256
