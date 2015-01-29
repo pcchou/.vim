@@ -148,3 +148,6 @@ function SudoWritenq()
 cnoreabbrev <expr>swq getcmdtype() == ":" && getcmdline() == 'swq' ? 'call SudoWritenq()' : 'swq'
 cnoreabbrev <expr>sw getcmdtype() == ":" && getcmdline() == 'sw' ? 'SudoWrite' : 'sw'
 
+" vim-easy-align
+vmap <Enter> <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)

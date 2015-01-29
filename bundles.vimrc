@@ -56,7 +56,7 @@ NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'YankRing.vim'
 
 " Format
-NeoBundle 'godlygeek/tabular'
+"NeoBundle 'godlygeek/tabular'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 "NeoBundle 'tpope/vim-sleuth'
 "NeoBundle 'ciaranm/detectindent'
