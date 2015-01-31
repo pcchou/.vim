@@ -115,6 +115,7 @@ autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
 autocmd FileType gitcommit,markdown set linebreak
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
+autocmd FileType javascript let delimitMate_expand_cr = 1
 au FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Misc.
