@@ -63,15 +63,6 @@ nnoremap <c-l> :nohl<cr>
 " close tag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
-" FileTypes
-autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md set filetype=markdown
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd FileType gitcommit setlocal spell
-autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
-autocmd FileType gitcommit,markdown set linebreak
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
-autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
-
 " Solarized
 let g:solarized_termcolors=256
 set background=dark
@@ -107,12 +98,22 @@ nnoremap <c-w>" :split<CR>
 
 " Completions
 filetype plugin on
-let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:SuperTabMappingForward = "<tab>"
 let g:SuperTabMappingBackward = "<s-tab>"
 inoremap <c-e> <c-x><c-k>
 inoremap <c-l> <c-x><c-l>
 set omnifunc=syntaxcomplete#Complete
+
+" FileTypes
+autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md set filetype=markdown
+autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType gitcommit setlocal spell
+autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
+autocmd FileType gitcommit,markdown set linebreak
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
+au FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Misc.
 map <F8> gg=G

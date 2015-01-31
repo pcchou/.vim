@@ -20,7 +20,7 @@ NeoBundle 'ehamberg/vim-cute-python'
 
 " PHP
 NeoBundle 'shawncplus/phpcomplete.vim'
-NeoBundle 'stephpy/vim-php-cs-fixer'
+"NeoBundle 'stephpy/vim-php-cs-fixer'
 
 " HTML/5
 NeoBundle 'alvan/vim-closetag'
