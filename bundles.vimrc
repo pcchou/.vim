@@ -27,11 +27,14 @@ NeoBundle 'alvan/vim-closetag'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'othree/html5.vim'
 
+" Javascript
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'jelera/vim-javascript-syntax'
+
 " Programming/Languages
 NeoBundle "sudar/vim-arduino-syntax"
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'scrooloose/syntastic.git'
-NeoBundle 'pangloss/vim-javascript'
 
 " Motion/textobj
 "NeoBundle 'kana/vim-textobj-line'

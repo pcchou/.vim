@@ -44,6 +44,7 @@ NeoBundleCheck
 
 " Global settings
 set nu
+set showmatch
 set ai
 set tabstop=4
 set shiftwidth=4
@@ -56,6 +57,7 @@ set showcmd
 set history=1000
 set encoding=utf-8
 set wildmode=longest,list,full
+syntax enable
 
 " map Ctel-L to be nohl, clear search highlight
 nnoremap <c-l> :nohl<cr>
@@ -153,3 +155,6 @@ cnoreabbrev <expr>sw getcmdtype() == ":" && getcmdline() == 'sw' ? 'SudoWrite' :
 " vim-easy-align
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" vim-javascript
+let g:javascript_enable_domhtmlcss = 1
