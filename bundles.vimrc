@@ -1,82 +1,82 @@
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
+Plugin 'Shougo/vimproc'
 
 " Libraries
-NeoBundle 'vim-scripts/L9'
-NeoBundle 'mattn/webapi-vim'
+Plugin 'vim-scripts/L9'
+Plugin 'mattn/webapi-vim'
 
 " Completion enhancements
-NeoBundle 'ervandew/supertab'
-NeoBundle 'othree/vim-autocomplpop'
-"NeoBundle 'Valloric/YouCompleteMe'
-"NeoBundle 'garbas/vim-snipmate'
+Plugin 'ervandew/supertab'
+Plugin 'othree/vim-autocomplpop'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'garbas/vim-snipmate'
 
 " Python
-NeoBundle 'davidhalter/jedi-vim'
-"NeoBundle 'rkulla/pydiction'
-"NeoBundle 'fisadev/vim-isort'
-NeoBundle 'ehamberg/vim-cute-python'
+Plugin 'davidhalter/jedi-vim'
+"Plugin 'rkulla/pydiction'
+"Plugin 'fisadev/vim-isort'
+Plugin 'ehamberg/vim-cute-python'
 
 " PHP
-NeoBundle 'shawncplus/phpcomplete.vim'
-"NeoBundle 'stephpy/vim-php-cs-fixer'
+Plugin 'shawncplus/phpcomplete.vim'
+"Plugin 'stephpy/vim-php-cs-fixer'
 
 " HTML/5
-NeoBundle 'alvan/vim-closetag'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'othree/html5.vim'
+Plugin 'alvan/vim-closetag'
+Plugin 'mattn/emmet-vim'
+Plugin 'othree/html5.vim'
 
 " Javascript
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
 
 " Programming/Languages
-NeoBundle "sudar/vim-arduino-syntax"
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'scrooloose/syntastic.git'
+Plugin "sudar/vim-arduino-syntax"
+Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/syntastic.git'
 
 " Motion/textobj
-"NeoBundle 'kana/vim-textobj-line'
-NeoBundle 'vim-scripts/argtextobj.vim'
-NeoBundle 'michaeljsmith/vim-indent-object'
-NeoBundle 'wellle/targets.vim'
-NeoBundle 'bkad/CamelCaseMotion'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'matchit.zip'
-NeoBundle 'justinmk/vim-sneak'
+"Plugin 'kana/vim-textobj-line'
+Plugin 'vim-scripts/argtextobj.vim'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'wellle/targets.vim'
+Plugin 'bkad/CamelCaseMotion'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'matchit.zip'
+Plugin 'justinmk/vim-sneak'
 
 " New features
-NeoBundle 'greyblake/vim-preview'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'greyblake/vim-preview'
-"NeoBundle 'jistr/vim-nerdtree-tabs'
-"NeoBundle 'jlanzarotta/bufexplorer'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'YankRing.vim'
+Plugin 'greyblake/vim-preview'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'greyblake/vim-preview'
+"Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'jlanzarotta/bufexplorer'
+Plugin 'tpope/vim-repeat'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-eunuch'
+Plugin 'YankRing.vim'
 
 " Format
-"NeoBundle 'godlygeek/tabular'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-"NeoBundle 'tpope/vim-sleuth'
-"NeoBundle 'ciaranm/detectindent'
-NeoBundle 'junegunn/vim-easy-align'
-NeoBundle 'yaifa.vim'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'Raimondi/delimitMate'
+"Plugin 'godlygeek/tabular'
+Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'tpope/vim-sleuth'
+"Plugin 'ciaranm/detectindent'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'yaifa.vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+Plugin 'Raimondi/delimitMate'
 
 " Integrations
-NeoBundle 'kana/vim-fakeclip'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'mattn/gist-vim'
-NeoBundle 'chrisbra/SudoEdit.vim'
-NeoBundle 'jplaut/vim-arduino-ino'
+Plugin 'kana/vim-fakeclip'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/gist-vim'
+Plugin 'chrisbra/SudoEdit.vim'
+Plugin 'jplaut/vim-arduino-ino'
 
 " Others
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'tpope/vim-sensible'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-sensible'

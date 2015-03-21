@@ -1,46 +1,29 @@
 " Setting up NeoBundle - the vim plugin bundler
 set nocompatible               " Be iMproved
 
-" NeoBundle check and auto install
-let iCanHazNeoBundle=1
-let NeoBundle_readme=expand('~/.vim/bundle/neobundle.vim/README.md')
-if !filereadable(NeoBundle_readme)
-    echo "Installing NeoBundle.."
+" Setting up Vundle - the vim plugin bundler
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle.."
     echo ""
     silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-    let iCanHazNeoBundle=0
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let iCanHazVundle=0
 endif
-
-if has('vim_starting')
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Bundles
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+"Add your bundles here
 source ~/.vim/bundles.vimrc
-
-filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-
-" Installation check.
-if iCanHazNeoBundle == 0
+"...All your other bundles...
+if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
     echo ""
-    :NeoBundleInstall
+    :BundleInstall
 endif
+" Setting up Vundle - the vim plugin bundler end
 
-call neobundle#end()
-
-NeoBundleCheck
 
 " Global settings
 set nu
@@ -117,6 +100,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
 autocmd FileType javascript let delimitMate_expand_cr = 1
 au FileType php set omnifunc=phpcomplete#CompletePHP
+filetype plugin indent on     " Required!
 
 " Misc.
 map <F8> gg=G
