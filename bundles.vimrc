@@ -32,7 +32,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 
 " Programming/Languages
-Plugin "sudar/vim-arduino-syntax"
+Plugin 'sudar/vim-arduino-syntax'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/syntastic.git'
 
@@ -47,7 +47,6 @@ Plugin 'matchit.zip'
 Plugin 'justinmk/vim-sneak'
 
 " New features
-Plugin 'greyblake/vim-preview'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'greyblake/vim-preview'
