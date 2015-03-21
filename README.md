@@ -17,16 +17,3 @@ How to use?
 5. You're free to go! Remember to report any issue or suggestions.
 
 You're welcome to report any issue or give suggestions.
-
-Plugin List
----
-TBD
-
-* [closetag](http://www.vim.org/scripts/script.php?script_id=13)
-* [ctrlp](https://github.com/kien/ctrlp.vim)
-* [NeoBundle](https://github.com/Shougo/neobundle.vim) -- Vim plugin manager
-* [syntastic](https://github.com/scrooloose/syntastic)
-* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
-* [vim-surround](https://github.com/tpope/vim-surround)
-* [SuperTab](https://github.com/ervandew/supertab)
-* [Jedi-Vim] (https://github.com/davidhalter/jedi-vim)
