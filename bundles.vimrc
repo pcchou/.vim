@@ -48,13 +48,13 @@ Plugin 'justinmk/vim-sneak'
 
 " New features
 Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 Plugin 'greyblake/vim-preview'
 "Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-repeat'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-eunuch'
+"Plugin 'tpope/vim-eunuch'
 Plugin 'YankRing.vim'
 
 " Format
@@ -64,14 +64,14 @@ Plugin 'nathanaelkane/vim-indent-guides'
 "Plugin 'ciaranm/detectindent'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'yaifa.vim'
-Plugin 'editorconfig/editorconfig-vim'
+"Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'Raimondi/delimitMate'
 
 " Integrations
 Plugin 'kana/vim-fakeclip'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/gist-vim'
 Plugin 'chrisbra/SudoEdit.vim'
 Plugin 'jplaut/vim-arduino-ino'
