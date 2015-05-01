@@ -127,6 +127,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=6
 let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_php_checkers = ['php']
 map <F6> :SyntasticReset<CR>
 nmap gp :lprev<cr>
 nmap gn :lnext<cr>
