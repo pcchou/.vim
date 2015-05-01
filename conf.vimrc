@@ -127,7 +127,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=6
 let g:syntastic_python_checkers = ['pyflakes']
-nmap <F6> :SyntasticReset<CR>
+map <F6> :SyntasticReset<CR>
+nmap gp :lprev<cr>
+nmap gn :lnext<cr>
 
 " SudoEdit
 let g:sudo_no_gui=1
