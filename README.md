@@ -66,4 +66,4 @@ It's licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
 ![screenshot](https://cloud.githubusercontent.com/assets/5615415/7441258/0e3720ec-f112-11e4-9f5b-1059af9c72d9.png)
 
-If you want it seperately, just get [pccline.vim](https://github.com/pcchou/.vim/blob/master/pccline.vim) and include it in your .vimrc (`source pccline.vim`).
+If you want it seperately, just get [pccline.vim](https://github.com/pcchou/.vim/raw/master/pccline.vim) and include it in your .vimrc (`source /path/to/pccline.vim`).

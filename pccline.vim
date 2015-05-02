@@ -1,6 +1,7 @@
 " PCC-line vim StatusLine
 " Color style and layout inspired by powerline (https://github.com/powerline/powerline)
 " by pcchou (https://pcchou.me/), under the MIT License
+" https://github.com/pcchou/.vim/blob/master/pccline.vim
 
 function Genstatus()
     let ret = ''
@@ -49,5 +50,6 @@ hi lVISUAL guifg=#875f00 guibg=#ffaf00 ctermfg=94 ctermbg=214
 hi lREPLACE guifg=#ffffff guibg=#d70000 ctermfg=15 ctermbg=160
 
 set statusline=%!Genstatus()
+set laststatus=2
 set noshowmode
 
