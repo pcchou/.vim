@@ -97,8 +97,8 @@ autocmd FileType gitcommit setlocal spell
 autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
 autocmd FileType gitcommit,markdown set linebreak
 autocmd FileType html,markdown,javascript set shiftwidth=2 tabstop=2 et
-autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
-autocmd FileType javascript let delimitMate_expand_cr = 1
+autocmd FileType javascript,php let delimitMate_expand_cr = 1
+"autocmd FileType javascript,php let delimitMate_matchpairs = '(:),[:],<:>'
 au FileType php set omnifunc=phpcomplete#CompletePHP
 filetype plugin indent on     " Required!
 
