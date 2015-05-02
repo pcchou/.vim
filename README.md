@@ -19,3 +19,10 @@ Instructions
 5. You're free to go! Remember to report any issue or suggestions.
 
 You're welcome to report any issue or give suggestions.
+
+pcc-line
+--------
+I've made a super lightweight statusline that is inspired by powerline, for those who don't want to use powerline.
+It's licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+If you want it seperately, just get [pccline.vim](https://github.com/pcchou/.vim/blob/master/pccline.vim) and include it in your .vimrc (`source pccline.vim`).
