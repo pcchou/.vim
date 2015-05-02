@@ -59,8 +59,8 @@ Installed plugins
 * [YankRing.vim by vim-scripts](https://github.com/vim-scripts/YankRing.vim)
 * [targets.vim by wellle](https://github.com/wellle/targets.vim)
 
-pcc-line
-========
+pccline.vim
+===========
 I've made a super lightweight statusline that is inspired by powerline, for those who don't want to use powerline.
 It's licensed under the [MIT License](http://opensource.org/licenses/MIT).
 

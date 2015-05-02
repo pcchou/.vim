@@ -1,4 +1,4 @@
-" PCC-line vim StatusLine
+" PCCline.vim StatusLine
 " Color style and layout inspired by powerline (https://github.com/powerline/powerline)
 " by pcchou (https://pcchou.me/), under the MIT License
 " https://github.com/pcchou/.vim/blob/master/pccline.vim
