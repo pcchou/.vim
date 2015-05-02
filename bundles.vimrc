@@ -25,7 +25,7 @@ Plugin 'pangloss/vim-javascript'
 
 " Programming/Languages
 Plugin 'sudar/vim-arduino-syntax'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'gabrielelana/vim-markdown'
 Plugin 'scrooloose/syntastic.git'
 
 " Motion/textobj
