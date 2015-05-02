@@ -33,7 +33,7 @@ Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'wellle/targets.vim'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'matchit.zip'
+Plugin 'vim-scripts/matchit.zip'
 Plugin 'justinmk/vim-sneak'
 
 " New features
@@ -41,7 +41,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'greyblake/vim-preview'
 Plugin 'tpope/vim-repeat'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'YankRing.vim'
+Plugin 'vim-scripts/YankRing.vim'
 
 " Format
 Plugin 'nathanaelkane/vim-indent-guides'
