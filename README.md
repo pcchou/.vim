@@ -20,9 +20,50 @@ Instructions
 
 You're welcome to report any issue or give suggestions.
 
+Installed plugins
+-----------------
+* [vim-gitgutter by airblade](https://github.com/airblade/vim-gitgutter)
+* [vim-colors-solarized by altercation](https://github.com/altercation/vim-colors-solarized)
+* [vim-closetag by alvan](https://github.com/alvan/vim-closetag)
+* [CamelCaseMotion by bkad](https://github.com/bkad/CamelCaseMotion)
+* [SudoEdit.vim by chrisbra](https://github.com/chrisbra/SudoEdit.vim)
+* [ctrlp.vim by ctrlpvim](https://github.com/ctrlpvim/ctrlp.vim)
+* [jedi-vim by davidhalter](https://github.com/davidhalter/jedi-vim)
+* [supertab by ervandew](https://github.com/ervandew/supertab)
+* [vim-markdown by gabrielelana](https://github.com/gabrielelana/vim-markdown)
+* [vim-preview by greyblake](https://github.com/greyblake/vim-preview)
+* [vim-arduino-ino by jplaut](https://github.com/jplaut/vim-arduino-ino)
+* [vim-easy-align by junegunn](https://github.com/junegunn/vim-easy-align)
+* [vim-sneak by justinmk](https://github.com/justinmk/vim-sneak)
+* [vim-fakeclip by kana](https://github.com/kana/vim-fakeclip)
+* [vim-easymotion by Lokaltog](https://github.com/Lokaltog/vim-easymotion)
+* [emmet-vim by mattn](https://github.com/mattn/emmet-vim)
+* [gist-vim by mattn](https://github.com/mattn/gist-vim)
+* [webapi-vim by mattn](https://github.com/mattn/webapi-vim)
+* [vim-indent-object by michaeljsmith](https://github.com/michaeljsmith/vim-indent-object)
+* [vim-indent-guides by nathanaelkane](https://github.com/nathanaelkane/vim-indent-guides)
+* [vim-autocomplpop by othree](https://github.com/othree/vim-autocomplpop)
+* [vim-javascript by pangloss](https://github.com/pangloss/vim-javascript)
+* [delimitMate by Raimondi](https://github.com/Raimondi/delimitMate)
+* [syntastic.git by scrooloose](https://github.com/scrooloose/syntastic.git)
+* [phpcomplete.vim by shawncplus](https://github.com/shawncplus/phpcomplete.vim)
+* [vimproc by Shougo](https://github.com/Shougo/vimproc)
+* [vim-arduino-syntax by sudar](https://github.com/sudar/vim-arduino-syntax)
+* [vim-commentary by tpope](https://github.com/tpope/vim-commentary)
+* [vim-repeat by tpope](https://github.com/tpope/vim-repeat)
+* [vim-sensible by tpope](https://github.com/tpope/vim-sensible)
+* [vim-sleuth by tpope](https://github.com/tpope/vim-sleuth)
+* [vim-surround by tpope](https://github.com/tpope/vim-surround)
+* [L9 by vim-scripts](https://github.com/vim-scripts/L9)
+* [matchit.zip by vim-scripts](https://github.com/vim-scripts/matchit.zip)
+* [YankRing.vim by vim-scripts](https://github.com/vim-scripts/YankRing.vim)
+* [targets.vim by wellle](https://github.com/wellle/targets.vim)
+
 pcc-line
---------
+========
 I've made a super lightweight statusline that is inspired by powerline, for those who don't want to use powerline.
 It's licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+![screenshot](https://cloud.githubusercontent.com/assets/5615415/7441258/0e3720ec-f112-11e4-9f5b-1059af9c72d9.png)
 
 If you want it seperately, just get [pccline.vim](https://github.com/pcchou/.vim/blob/master/pccline.vim) and include it in your .vimrc (`source pccline.vim`).
