@@ -5,27 +5,27 @@ function Genstatus()
     let ret = ''
     let modemode = mode()
     if modemode ==# "i"
-        let ret .='%#lINSERT# INSERT %*'
+        let ret .='%#lINSERT#  INSERT  %*'
     elseif modemode ==# "R"
-        let ret .='%#lREPLACE# REPLACE %*'
+        let ret .='%#lREPLACE#  REPLACE  %*'
     elseif modemode ==# "v"
-        let ret .='%#lVISUAL# VISUAL %*'
+        let ret .='%#lVISUAL#  VISUAL  %*'
     elseif modemode ==# "^V"
-        let ret .='%#lVISUAL# V-BLCK %*'
+        let ret .='%#lVISUAL#  V-BLCK  %*'
     elseif modemode ==# "V"
-        let ret .='%#lVISUAL# V-LINE %*'
+        let ret .='%#lVISUAL#  V-LINE  %*'
     elseif modemode ==# "s"
-        let ret .='%#lVISUAL# SELECT %*'
+        let ret .='%#lVISUAL#  SELECT  %*'
     elseif modemode ==# "S"
-        let ret .='%#lVISUAL# S-LINE %*'
+        let ret .='%#lVISUAL#  S-LINE  %*'
     elseif modemode ==# "^S"
-        let ret .='%#lVISUAL# S-BLCK %*'
+        let ret .='%#lVISUAL#  S-BLCK  %*'
     else
-        let ret .='%#lNORMAL# NORMAL %*'
+        let ret .='%#lNORMAL#  NORMAL  %*'
     endif
     let ret .='%#lROFLAG# %r%*'               " Read Only Flag
     let ret .='%1* %<%f %*'           " File Path
-    let ret .='%#lMODIFLAG#*%m %*'               " Modified Flag
+    let ret .='%#lMODIFLAG#*%m  %*'               " Modified Flag
     let ret .='%2*%=%{&ff} %*'         " File Format
     let ret .='%2*%{&enc} %*'          " File Encoding
     let ret .='%2*%y  %*'             " File Type
