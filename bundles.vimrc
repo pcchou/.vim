@@ -46,7 +46,7 @@ Plugin 'YankRing.vim'
 " Format
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/vim-easy-align'
-Plugin 'yaifa.vim'
+Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'Raimondi/delimitMate'
