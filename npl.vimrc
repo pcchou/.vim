@@ -1,5 +1,6 @@
 source ~/.vim/conf.vimrc
 
+set noshowmode
 function Genstatus()
     let ret = ''
     let modemode = mode()
