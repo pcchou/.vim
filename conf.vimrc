@@ -96,7 +96,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
 autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
 autocmd FileType gitcommit,markdown set linebreak
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html,markdown,javascript set shiftwidth=2 tabstop=2 et
 autocmd FileType html let delimitMate_matchpairs = "(:),[:],{:}"
 autocmd FileType javascript let delimitMate_expand_cr = 1
 au FileType php set omnifunc=phpcomplete#CompletePHP
@@ -129,8 +129,8 @@ let g:syntastic_loc_list_height=6
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_php_checkers = ['php']
 map <F6> :SyntasticReset<CR>
-nmap gp :lprev<cr>
-nmap gn :lnext<cr>
+nmap gfp :lprev<cr>
+nmap gfn :lnext<cr>
 
 " SudoEdit
 let g:sudo_no_gui=1
