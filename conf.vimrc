@@ -15,7 +15,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 "Add your bundles here
-source ~/.vim/bundles.vimrc
+source ~/.vim/plugins.vimrc
 "...All your other bundles...
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
