@@ -9,7 +9,7 @@ function Genstatus()
     if modemode ==# "i"
         let ret .='%#lINSERT#  INSERT  %*'
     elseif modemode ==# "R"
-        let ret .='%#lREPLACE#  REPLACE  %*'
+        let ret .='%#lREPLACE#  RPLACE  %*'
     elseif modemode ==# "v"
         let ret .='%#lVISUAL#  VISUAL  %*'
     elseif modemode ==# "^V"
