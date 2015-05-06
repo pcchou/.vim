@@ -22,6 +22,7 @@ Plugin 'mattn/emmet-vim'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
+Plugin 'myhere/vim-nodejs-complete'
 
 " Programming/Languages
 Plugin 'sudar/vim-arduino-syntax'
