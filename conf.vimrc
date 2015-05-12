@@ -74,8 +74,17 @@ set pastetoggle=<F10>
 
 " Browser-style tab keybind
 nnoremap <C-t> :tabnew<CR>
-inoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <c-w>w :q<CR>
+nnoremap g0 :tabfirst<cr>
+nnoremap g$ :tablast<cr>
+
+" Alt+n tab keybind
+for i in range(1, 8)
+    exe "map <A-".i."> ".i."gt"
+    exe "map <Esc>".i." ".i."gt"
+endfor
+exe "map <A-9> g$"
+exe "map <Esc>9 g$"
 
 " Tmux-style window keybind
 nnoremap <c-w>% :vsplit<CR>
