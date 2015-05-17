@@ -140,6 +140,8 @@ let g:syntastic_php_checkers = ['php']
 map <F6> :SyntasticReset<CR>
 nmap gfp :lprev<cr>
 nmap gfn :lnext<cr>
+nmap gfl :llast<cr>
+nmap gff :lfirst<cr>
 
 " SudoEdit
 let g:sudo_no_gui=1
