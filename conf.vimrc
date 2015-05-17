@@ -138,6 +138,8 @@ let g:syntastic_loc_list_height=6
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_php_checkers = ['php']
 map <F6> :SyntasticReset<CR>
+cnoreabbrev <expr>synpyf getcmdtype() == ":" && getcmdline() == 'synpyf' ? "let g:syntastic_python_checkers = ['pyflakes']" : 'synpyf'
+cnoreabbrev <expr>synpyl getcmdtype() == ":" && getcmdline() == 'synpyl' ? "let g:syntastic_python_checkers = ['pylint']" : 'synpyl'
 nmap gfp :lprev<cr>
 nmap gfn :lnext<cr>
 nmap gfl :llast<cr>
