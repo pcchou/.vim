@@ -75,8 +75,8 @@ set pastetoggle=<F10>
 " Browser-style tab keybind
 nnoremap <C-t> :tabnew<CR>
 nnoremap <c-w>w :q<CR>
-nnoremap g0 :tabfirst<cr>
-nnoremap g$ :tablast<cr>
+nnoremap gg0 :tabfirst<cr>
+nnoremap gg$ :tablast<cr>
 
 " Alt+n tab keybind
 for i in range(1, 8)
