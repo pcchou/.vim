@@ -12,6 +12,7 @@ Plugin 'othree/vim-autocomplpop'
 
 " Python
 Plugin 'davidhalter/jedi-vim'
+Plugin 'fisadev/vim-isort'
 
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
