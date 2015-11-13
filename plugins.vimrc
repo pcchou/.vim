@@ -51,7 +51,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
-Plugin 'Raimondi/delimitMate'
+Plugin 'jiangmiao/auto-pairs'
 
 " Integrations
 Plugin 'kana/vim-fakeclip'

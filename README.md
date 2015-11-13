@@ -52,6 +52,7 @@ Installed plugins
 * [vim-surround by tpope](https://github.com/tpope/vim-surround)
 * [vim-commentary by tpope](https://github.com/tpope/vim-commentary)
 * [delimitMate by Raimondi](https://github.com/Raimondi/delimitMate)
+* [auto-pairs by jiangmiao](https://github.com/jiangmiao/auto-pairs)
 * [vim-fakeclip by kana](https://github.com/kana/vim-fakeclip)
 * [gist-vim by mattn](https://github.com/mattn/gist-vim)
 * [SudoEdit.vim by chrisbra](https://github.com/chrisbra/SudoEdit.vim)
