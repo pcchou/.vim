@@ -1,6 +1,11 @@
 " Setting up NeoBundle - the vim plugin bundler
 set nocompatible               " Be iMproved
 
+" Local configs
+if filereadable(glob("~/.vim/local.vimrc"))
+    source ~/.vim/local.vimrc
+endif
+
 " Setting up Vundle - the vim plugin bundler
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
@@ -14,8 +19,10 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
+
 "Add your bundles here
 source ~/.vim/plugins.vimrc
+
 "...All your other bundles...
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
@@ -101,6 +108,7 @@ set omnifunc=syntaxcomplete#Complete
 
 " FileTypes
 autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md set filetype=markdown
+autocmd BufNewFile,BufRead *.zsh,*.zsh-theme,*.bash set filetype=sh
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
 autocmd FileType gitcommit,markdown set dictionary+=/usr/share/dict/words
