@@ -15,7 +15,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'fisadev/vim-isort'
 
 " PHP
-Plugin 'shawncplus/phpcomplete.vim'
+"Plugin 'shawncplus/phpcomplete.vim'
 
 " HTML/5
 Plugin 'alvan/vim-closetag'
@@ -26,7 +26,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'myhere/vim-nodejs-complete'
 
 " Programming/Languages
-Plugin 'sudar/vim-arduino-syntax'
+"Plugin 'sudar/vim-arduino-syntax'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'scrooloose/syntastic.git'
 
@@ -56,8 +56,8 @@ Plugin 'jiangmiao/auto-pairs'
 " Integrations
 Plugin 'kana/vim-fakeclip'
 Plugin 'mattn/gist-vim'
-Plugin 'chrisbra/SudoEdit.vim'
-Plugin 'jplaut/vim-arduino-ino'
+"Plugin 'chrisbra/SudoEdit.vim'
+"Plugin 'jplaut/vim-arduino-ino'
 
 " Others
 Plugin 'altercation/vim-colors-solarized'

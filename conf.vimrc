@@ -171,3 +171,5 @@ let g:javascript_enable_domhtmlcss = 1
 
 " jedi-vim
 let g:jedi#popup_on_dot = 0
+
+let g:AutoPairsShortcutToggle = '<M-m>'
