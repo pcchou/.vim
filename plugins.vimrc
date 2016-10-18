@@ -65,5 +65,5 @@ Plugin 'mattn/gist-vim'
 
 " Others
 "Plugin 'altercation/vim-colors-solarized'
-Plugin 'w0ng/vim-hybrid'
+Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-sensible'
