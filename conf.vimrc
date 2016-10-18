@@ -55,11 +55,6 @@ nnoremap <c-l> :nohl<cr>
 " close tag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
-" Solarized
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
-
 " GitGutter
 let g:gitgutter_eager = 1
 let g:gitgutter_realtime = 1
@@ -122,6 +117,7 @@ filetype plugin indent on     " Required!
 " Misc.
 map <F8> gg=G
 map <C-A> ggVG
+nnoremap <silent>;; :s/$/;/<cr>
 
 " Yank Ring
 let g:yankring_replace_n_pkey = "<c-m>"
@@ -145,6 +141,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=6
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_php_checkers = ['php']
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
 map <F6> :SyntasticReset<CR>
 cnoreabbrev <expr>synpyf getcmdtype() == ":" && getcmdline() == 'synpyf' ? "let g:syntastic_python_checkers = ['pyflakes']" : 'synpyf'
 cnoreabbrev <expr>synpyl getcmdtype() == ":" && getcmdline() == 'synpyl' ? "let g:syntastic_python_checkers = ['pylint']" : 'synpyl'
@@ -171,5 +169,4 @@ let g:javascript_enable_domhtmlcss = 1
 
 " jedi-vim
 let g:jedi#popup_on_dot = 0
-
 let g:AutoPairsShortcutToggle = '<M-m>'

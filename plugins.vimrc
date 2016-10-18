@@ -19,11 +19,11 @@ Plugin 'fisadev/vim-isort'
 
 " HTML/5
 Plugin 'alvan/vim-closetag'
-Plugin 'mattn/emmet-vim'
+"Plugin 'mattn/emmet-vim'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
-Plugin 'myhere/vim-nodejs-complete'
+"Plugin 'myhere/vim-nodejs-complete'
 
 " Programming/Languages
 "Plugin 'sudar/vim-arduino-syntax'
@@ -37,6 +37,8 @@ Plugin 'bkad/CamelCaseMotion'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'justinmk/vim-sneak'
+"Plugin 'vim-scripts/argtextobj.vim'
+Plugin 'kana/vim-textobj-user'
 
 " New features
 Plugin 'airblade/vim-gitgutter'
@@ -44,6 +46,8 @@ Plugin 'greyblake/vim-preview'
 Plugin 'tpope/vim-repeat'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/YankRing.vim'
+Plugin 'skammer/vim-css-color'
+
 
 " Format
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -60,5 +64,6 @@ Plugin 'mattn/gist-vim'
 "Plugin 'jplaut/vim-arduino-ino'
 
 " Others
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
+Plugin 'w0ng/vim-hybrid'
 Plugin 'tpope/vim-sensible'

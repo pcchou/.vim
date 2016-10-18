@@ -1,13 +1,10 @@
 source ~/.vim/conf.vimrc
 
-" powerline
-set rtp+=/usr/local/lib/python3.4/dist-packages/powerline/bindings/vim/
-set laststatus=2
-set t_Co=256
-
 set background=dark
-colorscheme solarized
+colorscheme hybrid
 highlight clear SignColumn
+let g:gitgutter_enabled = 0
 
 hi IndentGuidesOdd  ctermbg=3
 hi IndentGuidesEven ctermbg=4
+source ~/.vim/pccline.vim
