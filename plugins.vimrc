@@ -8,7 +8,8 @@ Plugin 'mattn/webapi-vim'
 
 " Completion enhancements
 Plugin 'ervandew/supertab'
-Plugin 'othree/vim-autocomplpop'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
 
 " Python
 Plugin 'davidhalter/jedi-vim'
@@ -67,3 +68,4 @@ Plugin 'mattn/gist-vim'
 "Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-sensible'
+Plugin 'wakatime/vim-wakatime'

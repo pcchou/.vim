@@ -94,12 +94,15 @@ nnoremap <c-w>" :split<CR>
 
 " Completions
 filetype plugin on
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:SuperTabMappingForward = "<tab>"
-let g:SuperTabMappingBackward = "<s-tab>"
-inoremap <c-e> <c-x><c-k>
-inoremap <c-l> <c-x><c-l>
-set omnifunc=syntaxcomplete#Complete
+let g:jedi#completions_enabled = 0 " We use YCM nowadays!
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+
+autocmd filetype c,cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype python nnoremap <F5> :w <bar> exec '!python '.shellescape('%')<CR>
+nnoremap <F4> :YcmDiags<CR>
 
 " FileTypes
 autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md set filetype=markdown
@@ -122,13 +125,6 @@ nnoremap <silent>;; :s/$/;/<cr>
 " Yank Ring
 let g:yankring_replace_n_pkey = "<c-m>"
 nnoremap <silent><F7> :YRShow<CR>
-
-" emmet
-let g:user_emmet_expandabbr_key='<c-y>h'
-
-" vim-arduino
-let g:vim_arduino_library_path = '/usr/share/arduino/lib'
-let g:vim_arduino_serial_port = '$(ls /dev/tty* | grep usb)'
 
 " syntastic
 set statusline+=%#warningmsg#
