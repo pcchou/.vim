@@ -47,7 +47,6 @@ Plugin 'greyblake/vim-preview'
 Plugin 'tpope/vim-repeat'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/YankRing.vim'
-Plugin 'skammer/vim-css-color'
 
 
 " Format
