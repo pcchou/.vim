@@ -56,6 +56,7 @@ nnoremap <c-l> :nohl<cr>
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
 " GitGutter
+let g:gitgutter_enabled = 1
 let g:gitgutter_eager = 1
 let g:gitgutter_realtime = 1
 let g:gitgutter_sign_column_always = 1

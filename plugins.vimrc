@@ -8,7 +8,7 @@ Plugin 'mattn/webapi-vim'
 
 " Completion enhancements
 Plugin 'ervandew/supertab'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 
 " Python
@@ -25,6 +25,10 @@ Plugin 'alvan/vim-closetag'
 " Javascript
 Plugin 'pangloss/vim-javascript'
 "Plugin 'myhere/vim-nodejs-complete'
+
+
+" Vue
+Plugin 'posva/vim-vue'
 
 " Programming/Languages
 "Plugin 'sudar/vim-arduino-syntax'
