@@ -9,11 +9,15 @@ Plugin 'mattn/webapi-vim'
 " Completion enhancements
 Plugin 'ervandew/supertab'
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'rdnetto/YCM-Generator'
+"Plugin 'rdnetto/YCM-Generator'
 
 " Python
 Plugin 'davidhalter/jedi-vim'
 Plugin 'fisadev/vim-isort'
+
+" Golang
+Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " PHP
 "Plugin 'shawncplus/phpcomplete.vim'
@@ -66,6 +70,7 @@ Plugin 'kana/vim-fakeclip'
 Plugin 'mattn/gist-vim'
 "Plugin 'chrisbra/SudoEdit.vim'
 "Plugin 'jplaut/vim-arduino-ino'
+Plugin 'wincent/terminus'
 
 " Others
 "Plugin 'altercation/vim-colors-solarized'

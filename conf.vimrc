@@ -56,11 +56,14 @@ nnoremap <c-l> :nohl<cr>
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
 " GitGutter
-let g:gitgutter_enabled = 1
-let g:gitgutter_eager = 1
-let g:gitgutter_realtime = 1
-let g:gitgutter_sign_column_always = 1
-set updatetime=750
+let g:gitgutter_grep=''
+if exists('&signcolumn')  " Vim 7.4.2201
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1
+endif
+set updatetime=100
+autocmd BufWritePost * GitGutter
 
 " NERDTree Tab
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
@@ -95,11 +98,13 @@ nnoremap <c-w>" :split<CR>
 
 " Completions
 filetype plugin on
-let g:jedi#completions_enabled = 0 " We use YCM nowadays!
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_seed_identifiers_with_syntax = 1
+let g:jedi#completions_enabled = 1
+let g:jedi#completions_command = "<C-K>"
+let g:SuperTabDefaultCompletionType = "context"
+"let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+"let g:ycm_confirm_extra_conf = 0
+"let g:ycm_collect_identifiers_from_tags_files = 1
+"let g:ycm_seed_identifiers_with_syntax = 1
 
 autocmd filetype c,cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 autocmd filetype python nnoremap <F5> :w <bar> exec '!python '.shellescape('%')<CR>
@@ -167,3 +172,7 @@ let g:javascript_enable_domhtmlcss = 1
 " jedi-vim
 let g:jedi#popup_on_dot = 0
 let g:AutoPairsShortcutToggle = '<M-m>'
+
+" go
+let g:go_fmt_autosave = 1
+au Filetype go nmap <leader>l <Plug>(go-lint)
