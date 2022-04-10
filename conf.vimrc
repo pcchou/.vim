@@ -144,7 +144,8 @@ let g:syntastic_loc_list_height=6
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_php_checkers = ['php']
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -Wpedantic'
+let g:syntastic_c_compiler_options = ' -std=gnu99 -Wall -Wextra -Wpedantic'
 map <F6> :SyntasticReset<CR>
 cnoreabbrev <expr>synpyf getcmdtype() == ":" && getcmdline() == 'synpyf' ? "let g:syntastic_python_checkers = ['pyflakes']" : 'synpyf'
 cnoreabbrev <expr>synpyl getcmdtype() == ":" && getcmdline() == 'synpyl' ? "let g:syntastic_python_checkers = ['pylint']" : 'synpyl'
